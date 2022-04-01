@@ -1,4 +1,4 @@
-import { createContext, ReactNode, useContext, useState } from "react";
+import { createContext, ReactNode, useContext, useEffect, useState } from "react";
 
 type StudentsContextValues = {
     addStudent: (student: Student) => void;
@@ -26,9 +26,16 @@ export function StudentsContextProvider({
     
     const [students, setStudents] = useState([] as Student[]);
 
+    useEffect(() => {
+        const localStudents = localStorage.getItem("trampoxandy:students");
+        const parsed = JSON.parse(localStudents!)
+        setStudents(parsed || [])
+    }, [])
+
     function addStudent(student: Student): void {
         setStudents(prevValue => [...prevValue, student]);
-    }
+        localStorage.setItem("trampoxandy:students", JSON.stringify(students))
+    };
 
     const values: StudentsContextValues = {
         addStudent,

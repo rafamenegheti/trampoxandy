@@ -13,7 +13,7 @@ import {
 
 export default function AddStudent() {
 
-    const { addStudent, students } = useStudents()
+    const { addStudent } = useStudents()
 
     const {
         register,

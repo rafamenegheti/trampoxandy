@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { Student } from '../../contexts/StudentsContext';
+import { Student, useStudents } from '../../contexts/StudentsContext';
 import {
     Container,
     Logo,
@@ -13,33 +13,13 @@ import {
 } from './styles'
 
 
-interface Test {
-    idade: number
-}
-
-
 export function Header() {
 
+    const { students } = useStudents();
 
-    function objBubbleSort(arr: Test[], param: string) {
-        let trocou = false;
-        do {
-            for (let i = 0; i < arr.length - 1; i++) {
-                    if (arr[i][param] > arr[i + 1][param]) {
-                        [arr[i], arr[i + 1]] = [arr[i + 1], arr[i]];
-                        trocou = true;
-                    };
-            };
-        } while (trocou)
+    console.log(students)
 
-        console.log(arr)
-    }
-
-    const param = 'idade'
-    const sla = [{ idade: 4 }, { idade: 7 }, { idade: 1 }]
-
-    objBubbleSort(sla, 'idade')
-
+ 
 
     return (
         <Container>
@@ -60,7 +40,9 @@ export function Header() {
                         Relatórios
                     </DropDownButton>
                     <DropDownContent className="content">
-                        <DropDownLink>crescente por nome</DropDownLink>
+                        <DropDownLink
+                            href={'/NameCrescent'}
+                        >crescente por nome</DropDownLink>
                         <DropDownLink>crescente por nome(aprovados)</DropDownLink>
                         <DropDownLink>decrescente por RA</DropDownLink>
                     </DropDownContent>
