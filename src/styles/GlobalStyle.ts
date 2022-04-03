@@ -8,7 +8,8 @@ export const GlobalStyle = createGlobalStyle`
     }
     body {
         font-family: 'IBM Plex Sans Arabic', sans-serif;
-        background-color: #caf0f8;
+        background-color: #343a40;
+        color: #f8edeb;
     }
     @media (max-width: 1080px) {
     html {

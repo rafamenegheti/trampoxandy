@@ -1,15 +1,30 @@
-import { Student, useStudents } from "../../contexts/StudentsContext";
+import { useEffect, useState } from "react";
+import axios from 'axios'
 import {
     Container,
-    Title
+    Title,
 } from "./styles";
+import Table from "../../components/Table";
 
 
 export default function NameCrescent() {
 
-    const { students } = useStudents();
+    interface Student {
+        nome: string,
+        RA: string,
+        idade: number,
+        sexo: string,
+        media: number,
+        resultado: string,
+        id: number
+    }
 
-    console.log(students)
+    const [students, setStudents] = useState([] as Student[]);
+
+    useEffect(() => {
+        axios.get('http://localhost:3002/students')
+            .then(data => setStudents(data.data))
+    }, [])
 
     function bubbleSortNameCrescent(vetor: Student[], fnComp: (a: Student, b: Student) => boolean) {
         let trocou
@@ -36,32 +51,7 @@ export default function NameCrescent() {
         <Container>
             <Title>Alunos em ordem crescente de nome</Title>
 
-            <table>
-                <thead>
-                    <tr>
-                        <td>Nome</td>
-                        <td>RA</td>
-                        <td>Idade</td>
-                        <td>Sexo</td>
-                        <td>Média</td>
-                        <td>Resultado</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    {students.map(student => {
-                        return (
-                            <tr>
-                                <td>{student.nome}</td>
-                                <td>{student.RA}</td>
-                                <td>{student.idade}</td>
-                                <td>{student.sexo}</td>
-                                <td>{student.media}</td>
-                                <td>{student.resultado}</td>
-                            </tr>
-                        )
-                    })}
-                </tbody>
-            </table>
+            <Table students={students}/>
         </Container >
     )
 }

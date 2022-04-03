@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { Student, useStudents } from '../../contexts/StudentsContext';
 import {
     Container,
     Logo,
@@ -15,11 +14,7 @@ import {
 
 export function Header() {
 
-    const { students } = useStudents();
-
-    console.log(students)
-
- 
+    const router = useRouter()
 
     return (
         <Container>
@@ -32,7 +27,9 @@ export function Header() {
                         Adcionar aluno
                     </LinkButton>
                 </Link>
-                <LinkButton>
+                <LinkButton
+                    onClick={() => router.push('/FindStudent')}
+                >
                     Pesquisar aluno
                 </LinkButton>
                 <DropDown className="drop">
@@ -43,8 +40,12 @@ export function Header() {
                         <DropDownLink
                             href={'/NameCrescent'}
                         >crescente por nome</DropDownLink>
-                        <DropDownLink>crescente por nome(aprovados)</DropDownLink>
-                        <DropDownLink>decrescente por RA</DropDownLink>
+                        <DropDownLink
+                            href={'/AprovedNameCrescent'}
+                        >crescente por nome(aprovados)</DropDownLink>
+                        <DropDownLink
+                            href={'/RADecrescent'}
+                        >decrescente por RA</DropDownLink>
                     </DropDownContent>
                 </DropDown>
             </Links>

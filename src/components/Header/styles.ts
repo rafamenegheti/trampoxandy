@@ -8,7 +8,7 @@ export const Container = styled.div`
     align-items: center;
     justify-content: space-around;
 
-    background-color: #4895ef;
+    background-color: #240046;
 `;
 
 

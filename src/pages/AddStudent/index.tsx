@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import { Student, useStudents } from "../../contexts/StudentsContext";
+import axios from 'axios'
 import {
     Container,
     Wrapper,
@@ -10,22 +10,30 @@ import {
     ButtonStyled,
     Error
 } from "./styles";
+import { useRouter } from "next/router";
 
 export default function AddStudent() {
 
-    const { addStudent } = useStudents()
+    const router = useRouter()
 
+    interface Student {
+        nome: string,
+        RA: string,
+        idade: number,
+        sexo: string,
+        media: number,
+        resultado: string
+    }
     const {
         register,
-        setError,
-        clearErrors,
         handleSubmit,
-        getFieldState,
+        reset,
         formState: { errors }
     } = useForm<Student>();
 
     function onSubmit(form: Student) {
-        addStudent(form);
+        axios.post('http://localhost:3002/students', {...form, id: Math.random()})
+        reset()
     };
 
     return(
@@ -62,7 +70,7 @@ export default function AddStudent() {
                         <ButtonWrapper>
                             <ButtonStyled
                                 typeProp={"cancel"}
-                                // onClick={}
+                                onClick={() => router.push('/')}
                             >
                                 Cancelar
                             </ButtonStyled>

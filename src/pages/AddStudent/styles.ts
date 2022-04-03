@@ -31,7 +31,6 @@ export const Form = styled.form`
 
 
 export const Label = styled.label`
-    color: ${({ theme }) => theme.colors.text_dark};
     margin-top: 1rem;
 `
 

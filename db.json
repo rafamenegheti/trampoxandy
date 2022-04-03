@@ -1,0 +1,121 @@
+{
+  "students": [
+    {
+      "nome": "Rafael",
+      "RA": "158784340",
+      "idade": 20,
+      "sexo": "m",
+      "media": 8,
+      "resultado": "aprovado",
+      "id": 0.10758158121409923
+    },
+    {
+      "nome": "Jonas Brother",
+      "RA": "09082109",
+      "idade": "23",
+      "sexo": "f",
+      "media": "23",
+      "resultado": "reprovado",
+      "id": 0.4216701976393027
+    },
+    {
+      "nome": "joao",
+      "RA": "464684",
+      "idade": "45",
+      "sexo": "m",
+      "media": "54",
+      "resultado": "aprovado",
+      "id": 0.4726525748017283
+    },
+    {
+      "nome": "jonas",
+      "RA": "4684",
+      "idade": "46",
+      "sexo": "m",
+      "media": "456",
+      "resultado": "aprovado",
+      "id": 0.5963719782265056
+    },
+    {
+      "nome": "rafaelzi",
+      "RA": "446",
+      "idade": "45",
+      "sexo": "m",
+      "media": "545",
+      "resultado": "aprovado",
+      "id": 0.5867607185608947
+    },
+    {
+      "nome": "doidin",
+      "RA": "445",
+      "idade": "4",
+      "sexo": "m",
+      "media": "5",
+      "resultado": "aprovado",
+      "id": 0.1331448526290695
+    },
+    {
+      "nome": "werwr",
+      "RA": "werwer",
+      "idade": "werwer",
+      "sexo": "m",
+      "media": "werwer",
+      "resultado": "aprovado",
+      "id": 0.8776767717572014
+    },
+    {
+      "nome": "werwe",
+      "RA": "werwer",
+      "idade": "werwe",
+      "sexo": "m",
+      "media": "wer",
+      "resultado": "aprovado",
+      "id": 0.7215910313650877
+    },
+    {
+      "nome": "werwewer",
+      "RA": "werwer",
+      "idade": "wer",
+      "sexo": "m",
+      "media": "wrewer",
+      "resultado": "aprovado",
+      "id": 0.08363274368006213
+    },
+    {
+      "nome": "werwe",
+      "RA": "werwe",
+      "idade": "werwer",
+      "sexo": "m",
+      "media": "werwer",
+      "resultado": "aprovado",
+      "id": 0.6962942032019215
+    },
+    {
+      "nome": "werwe",
+      "RA": "werwer",
+      "idade": "werwer",
+      "sexo": "m",
+      "media": "werwer",
+      "resultado": "aprovado",
+      "id": 0.9560735616429221
+    },
+    {
+      "nome": "werwrwe",
+      "RA": "werwer",
+      "idade": "werwre",
+      "sexo": "m",
+      "media": "werwe",
+      "resultado": "aprovado",
+      "id": 0.40592373973748597
+    },
+    {
+      "nome": "werwer",
+      "RA": "werwer",
+      "idade": "werwer",
+      "sexo": "m",
+      "media": "werwer",
+      "resultado": "aprovado",
+      "id": 0.9230914709120523
+    }
+  ]
+}
