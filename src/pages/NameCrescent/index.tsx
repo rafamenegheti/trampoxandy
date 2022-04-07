@@ -39,12 +39,8 @@ export default function NameCrescent() {
         } while (trocou)
     };
 
-
     bubbleSortNameCrescent(students, (elem1: Student, elem2: Student) => {
-        if (elem1.nome === elem2.nome) {
-            return elem1.nome > elem2.nome
-        }
-        else return elem1.nome > elem2.nome
+            return elem1.nome.toLowerCase() > elem2.nome.toLowerCase();
     })
 
     return (

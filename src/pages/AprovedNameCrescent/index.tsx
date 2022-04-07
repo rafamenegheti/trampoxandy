@@ -27,36 +27,33 @@ export default function AprovedNameCrescent() {
     }, [])
 
     function merge(left: Student[], right: Student[]): Student[] {
-        let arr = []
+        let array = []
 
-        while (left.length && right.length) {
+        if (left.length && right.length) {
 
             if (compare(left[0], right[0])) {
-                arr.push(left.shift())  
+                array.push(left.shift())  
             } else {
-                arr.push(right.shift()) 
+                array.push(right.shift()) 
             }
         }
         
-        return [ ...arr, ...left, ...right ] as Student[]
+        return [ ...array, ...left, ...right ] as Student[]
     }
 
     function compare(elem1: Student, elem2: Student) {
-        if (elem1.nome === elem2.nome) {
-            return elem1.nome > elem2.nome
-        }
-        else return elem1.nome < elem2.nome
+        return elem1.nome.toLowerCase() < elem2.nome.toLowerCase();
     };
 
     function mergeSort(array: Student[]): Student[] {
-        const half = array.length / 2
+        const half = Math.floor((array.length / 2))
         
         if(array.length < 2){
           return array 
         }
         
         const left = array.splice(0, half)
-        return merge(mergeSort(left),mergeSort(array))
+        return merge(mergeSort(left), mergeSort(array))
       };
 
       const filteredStudents = students.filter((students) => students.resultado === 'aprovado')

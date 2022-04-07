@@ -46,11 +46,8 @@ export default function FindStudent() {
     };
 
     selectionSort(students, (elem1: Student, elem2: Student) => {
-        if (elem1.nome === elem2.nome) {
-            return elem1.nome > elem2.nome
-        } else {
-            return elem1.nome > elem2.nome
-        }
+            return elem1.nome.toLowerCase() > elem2.nome.toLowerCase()
+        
     });
 
     function buscaBinaria(vetor: Student[], busca: string, fnComp: (valorMeio: Student, valorBusca: string) => 0 | 1 | -1) {
@@ -76,8 +73,8 @@ export default function FindStudent() {
 
 
     function comparar(valorMeio: Student, valorBusca: string) {
-        if (valorBusca.toLocaleLowerCase() === valorMeio.nome.toLocaleLowerCase()) return 0
-        else if (valorBusca.toLocaleLowerCase() > valorMeio.nome.toLocaleLowerCase()) return 1
+        if (valorBusca.toLowerCase() === valorMeio.nome.toLowerCase()) return 0
+        else if (valorBusca.toLowerCase() > valorMeio.nome.toLowerCase()) return 1
         else return -1
     };
 

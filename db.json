@@ -1,8 +1,8 @@
 {
   "students": [
     {
-      "nome": "Rafael",
-      "RA": "158784340",
+      "nome": "j",
+      "RA": "3",
       "idade": 20,
       "sexo": "m",
       "media": 8,
@@ -10,112 +10,103 @@
       "id": 0.10758158121409923
     },
     {
-      "nome": "Jonas Brother",
-      "RA": "09082109",
-      "idade": "23",
+      "nome": "a",
+      "RA": "8",
+      "idade": 20,
+      "sexo": "m",
+      "media": 8,
+      "resultado": "aprovado",
+      "id": 0.10758158121409923
+    },
+    {
+      "nome": "p",
+      "RA": "1",
+      "idade": 20,
+      "sexo": "m",
+      "media": 8,
+      "resultado": "aprovado",
+      "id": 0.10758158121409923
+    },
+    {
+      "nome": "c",
+      "RA": "6",
+      "idade": 20,
+      "sexo": "m",
+      "media": 8,
+      "resultado": "aprovado",
+      "id": 0.10758158121409923
+    },
+    {
+      "nome": "x",
+      "RA": "13",
+      "idade": 20,
+      "sexo": "m",
+      "media": 8,
+      "resultado": "aprovado",
+      "id": 0.10758158121409923
+    },
+    {
+      "nome": "c",
+      "RA": "67",
+      "idade": 20,
+      "sexo": "m",
+      "media": 8,
+      "resultado": "aprovado",
+      "id": 0.10758158121409923
+    },
+    {
+      "nome": "e",
+      "RA": "37",
+      "idade": 20,
+      "sexo": "m",
+      "media": 8,
+      "resultado": "aprovado",
+      "id": 0.10758158121409923
+    },
+    {
+      "nome": "Jhonas Brothers",
+      "RA": "290393",
+      "idade": "24",
       "sexo": "f",
-      "media": "23",
+      "media": "8",
       "resultado": "reprovado",
-      "id": 0.4216701976393027
+      "id": 0.9681708653134873
     },
     {
-      "nome": "joao",
-      "RA": "464684",
-      "idade": "45",
+      "nome": "Junior",
+      "RA": "4846",
+      "idade": "15",
       "sexo": "m",
-      "media": "54",
+      "media": "7",
       "resultado": "aprovado",
-      "id": 0.4726525748017283
+      "id": 0.40864460839614614
     },
     {
-      "nome": "jonas",
-      "RA": "4684",
-      "idade": "46",
+      "nome": "Brunin",
+      "RA": "58",
+      "idade": "18",
       "sexo": "m",
-      "media": "456",
+      "media": "7",
       "resultado": "aprovado",
-      "id": 0.5963719782265056
+      "id": 0.6986324999584106
     },
     {
-      "nome": "rafaelzi",
-      "RA": "446",
-      "idade": "45",
+      "nome": "Rafael",
+      "RA": "18487",
+      "idade": "5",
       "sexo": "m",
-      "media": "545",
-      "resultado": "aprovado",
-      "id": 0.5867607185608947
+      "media": "8",
+      "resultado": "reprovado",
+      "id": 0.21865069015696514
     },
     {
-      "nome": "doidin",
-      "RA": "445",
-      "idade": "4",
+      "nome": "Raffael",
+      "RA": "88764",
+      "idade": "5",
       "sexo": "m",
       "media": "5",
       "resultado": "aprovado",
-      "id": 0.1331448526290695
-    },
-    {
-      "nome": "werwr",
-      "RA": "werwer",
-      "idade": "werwer",
-      "sexo": "m",
-      "media": "werwer",
-      "resultado": "aprovado",
-      "id": 0.8776767717572014
-    },
-    {
-      "nome": "werwe",
-      "RA": "werwer",
-      "idade": "werwe",
-      "sexo": "m",
-      "media": "wer",
-      "resultado": "aprovado",
-      "id": 0.7215910313650877
-    },
-    {
-      "nome": "werwewer",
-      "RA": "werwer",
-      "idade": "wer",
-      "sexo": "m",
-      "media": "wrewer",
-      "resultado": "aprovado",
-      "id": 0.08363274368006213
-    },
-    {
-      "nome": "werwe",
-      "RA": "werwe",
-      "idade": "werwer",
-      "sexo": "m",
-      "media": "werwer",
-      "resultado": "aprovado",
-      "id": 0.6962942032019215
-    },
-    {
-      "nome": "werwe",
-      "RA": "werwer",
-      "idade": "werwer",
-      "sexo": "m",
-      "media": "werwer",
-      "resultado": "aprovado",
-      "id": 0.9560735616429221
-    },
-    {
-      "nome": "werwrwe",
-      "RA": "werwer",
-      "idade": "werwre",
-      "sexo": "m",
-      "media": "werwe",
-      "resultado": "aprovado",
-      "id": 0.40592373973748597
-    },
-    {
-      "nome": "werwer",
-      "RA": "werwer",
-      "idade": "werwer",
-      "sexo": "m",
-      "media": "werwer",
-      "resultado": "aprovado",
-      "id": 0.9230914709120523
+      "id": 0.0016798401752287084
     }
   ]
 }
